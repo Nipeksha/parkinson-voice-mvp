@@ -1,0 +1,71 @@
+
+@keyframes float1 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(10px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(15px) translateX(-15px); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-10px) translateX(15px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+.animate-float1 {
+    animation: float1 8s ease-in-out infinite;
+}
+
+.animate-float2 {
+    animation: float2 10s ease-in-out infinite;
+}
+
+.animate-float3 {
+    animation: float3 12s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+.recording-animation {
+    animation: pulse 0.8s infinite;
+}
+#recordButton {
+    transition: all 0.3s ease;
+}
+
+#resultContainer.show {
+    opacity: 1;
+}
