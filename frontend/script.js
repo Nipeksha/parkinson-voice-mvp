@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let audioChunks = [];
 
     // 👉 put your backend URL here:
-    const BACKEND_URL = "https://your-ngrok-url.ngrok.io/predict"; //dummy
+    const BACKEND_URL = "https://03abd9d6c9d9.ngrok-free.app/predict"; 
     
     recordButton.addEventListener('click', async () => {
         if (!isRecording) {
@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     //this is where the frontend records the audio and sends it to the backend for processing
+
     async function processAudio(audioBlob) {
         try {
             const formData = new FormData();
